@@ -7,12 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    <?php
-    function pagamento($desconto=2)
-    {
-        echo 'o desconto foi de: ' . $desconto . '%';
-    }
-    pagamento();
-    ?>
+    <form action="inputs.php" method="POST">
+        Login: <input type="text" name="login" />
+        <br /><br />
+        <input type="submit" value="Enviar" />
+    </form> 
 </body>
 </html>
